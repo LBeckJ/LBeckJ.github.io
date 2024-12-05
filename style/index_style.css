@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Jockey+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+}
+
+body {
+    background-color: #AFDDE5;
+}
+
+#nav_container {
+    font-size: 35px;
+    color: #964734;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    height: 100%;
+}
+
+#git_img {
+    padding-top: 4px;
+    fill: currentColor;
+    display: block;
+    height: auto;
+}
+
+#nav_buttons a{
+    float: right;
+    text-decoration: none;
+    color: #964734;
+    padding-left: 30px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#nav_buttons a:hover {
+    color: rgb(43, 100, 255);
+}
+
+#nav_container p {
+    float: left;
+}
+
+.intro {
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 20px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 1px;
+    color: #002528;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 1360px) {
+    .img_container {
+        display: flex;
+        align-items: self-start;
+    }
+}
+
+.intro_text {
+    padding-top: 100px;
+}
+
+.divider {
+    width: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.btn_container {
+    padding-top: 20px;
+}
+
+.intro_text a {
+    cursor: pointer;
+    border: 3px solid #964734;
+    color: #964734;
+    background-color: transparent;
+    padding: 3px 10px;
+    font-size: 22px;
+    text-align: center;
+    transition: transform .2s;
+    border-radius: 10px;
+}
+
+
+.intro_text a:hover {
+    background-color: #964734;
+    color: #AFDDE5;
+}
+
+.img_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
+    align-items: center;
+    column-gap: 70px;
+    row-gap: 20px;
+    padding-bottom: 50px;
+    width: 60%;
+}
+
+.img_container img:hover {
+    transition: transform .2s;
+}
+
+.img_container img:hover {
+    transform: scale(1.2);
+}
+
+hr.solid {
+    border-top: 3px solid #024950;
+    padding: 20px;
+}
+
+
+footer {
+    height: 70px;
+    background-color: #0FA4AF;
+    text-align: center;
+}
