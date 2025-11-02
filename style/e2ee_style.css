@@ -11,6 +11,11 @@ body {
     background-color: #AFDDE5;
 }
 
+a {
+    text-decoration: none;
+    color: #7600d6;
+}
+
 #nav_container {
     font-size: 35px;
     color: #964734;
@@ -26,10 +31,9 @@ body {
     position: absolute;
 }
 
-a:visited {
-    color: transparent;
+#nav_title a:visited {
+    color: #964734;
 }
-
 
 #git_img {
     padding-top: 4px;
@@ -56,14 +60,14 @@ a:visited {
 }
 
 .intro {
-    display: inline-grid;
-    grid-template-columns: 40% 60%;
-    column-gap: 20px;
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 1px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    column-gap: 10px;
     color: #002528;
     font-size: x-large;
+    width: 100%;
+    align-items: center;
 }
 
 @media screen and (max-width: 1360px) {
@@ -75,54 +79,28 @@ a:visited {
 
 .intro_text {
     padding-top: 100px;
-}
-
-.divider {
-    width: 30px;
-    display: inline-block;
-    position: relative;
-}
-
-.btn_container {
-    padding-top: 20px;
-}
-
-.intro_text a {
-    cursor: pointer;
-    border: 3px solid #964734;
-    color: #964734;
-    background-color: transparent;
-    padding: 3px 10px;
-    font-size: 22px;
     text-align: center;
-    transition: transform .2s;
-    border-radius: 10px;
 }
 
-
-.intro_text a:hover {
-    background-color: #964734;
-    color: #AFDDE5;
-}
-
-.img_container {
+.main_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 10%;
-    align-items: center;
-    column-gap: 70px;
-    row-gap: 20px;
-    padding-bottom: 50px;
-    width: 60%;
+    column-gap: 5%;
+    row-gap: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    padding-left: 15%;
+    padding-top: 2.5%;
+    background-color: #7aaeb8;
 }
 
-.img_container img:hover {
-    transition: transform .2s;
-}
-
-.img_container img:hover {
-    transform: scale(1.2);
-}
+.project_intro {
+    background-color: #96483400;
+    text-align: left;
+    padding-top: 5%;
+    border-radius: 25px;
+    padding-bottom: 10%;
+} 
 
 hr.solid {
     border-top: 3px solid #024950;
